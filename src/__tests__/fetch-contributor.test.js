@@ -1,12 +1,12 @@
-import React from "react";
+import "@testing-library/jest-dom";
 import {
+  fireEvent,
   render,
   screen,
-  fireEvent,
-  waitForElementToBeRemoved,
   waitFor,
+  waitForElementToBeRemoved,
 } from "@testing-library/react";
-import "@testing-library/jest-dom";
+import React from "react";
 import Contributors from "../Contributors";
 
 beforeAll(() => jest.spyOn(window, "fetch"));
